@@ -12,7 +12,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
    ===================================================================== */
 
 const USE_BACKEND = true
-const RAW_API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api'
+const RAW_API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://medicare-hospital-backend.onrender.com/api'
 const CLEAN_BASE = RAW_API_BASE.trim().replace(/\/+$/, '')
 const API_BASE = CLEAN_BASE.endsWith('/api') ? CLEAN_BASE : `${CLEAN_BASE}/api`
 
